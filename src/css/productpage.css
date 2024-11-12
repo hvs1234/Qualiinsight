@@ -7,4 +7,11 @@
 
 .section-product .product-heading {
     font-weight: 500;
+    font-size: 8rem;
+    max-width: 50%;
+}
+
+.product-content .productpage-para {
+    font-size: 2.5rem;
+    letter-spacing: 0;
 }

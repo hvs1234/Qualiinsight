@@ -1,7 +1,7 @@
 import React from "react";
-import "../css/footer.css";
-
 import { Link } from "react-router-dom";
+import logo_main from "/Images/logo2.png";
+import "../css/footer.css";
 
 const Footer = () => {
   // Reload
@@ -45,19 +45,22 @@ const Footer = () => {
         <div className="container">
           <div className="f-main">
             <div className="f-logo">
-              <p className="logo-name f-logo-name">
-                <span>Q</span>uali<span>I</span>nsight.
-              </p>
+              <div className="logo-img">
+                <img src={logo_main} alt="logo" />
+              </div>
               <p className="f-follow-para">Follow Us On</p>
               <div className="social-links">
-                <a href="#">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61563835936410"
+                  target="_blank"
+                >
                   <i className="fa-brands fa-facebook-f"></i>
                 </a>
-                <a href="#">
-                  <i className="fa-brands fa-instagram"></i>
-                </a>
-                <a href="#">
-                  <i className="fa-brands fa-twitter"></i>
+                <a
+                  href="https://www.linkedin.com/company/qualiinsight/"
+                  target="_blank"
+                >
+                  <i className="fa-brands fa-linkedin"></i>
                 </a>
               </div>
             </div>
@@ -104,6 +107,16 @@ const Footer = () => {
                     </li>
                     <li>
                       <Link
+                        to={"/usecase"}
+                        onClick={handleOnClick("/usecase")}
+                        className="f-navlink"
+                      >
+                        <i className="fa-solid fa-arrow-right"></i>&nbsp;
+                        Usecase
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         to={"/contact"}
                         onClick={handleOnClick("/contact")}
                         className="f-navlink"
@@ -121,8 +134,8 @@ const Footer = () => {
                   <ul>
                     <li>
                       <Link
-                        to={"/"}
-                        onClick={handleOnClick("/")}
+                        to={"/about"}
+                        onClick={handleOnClick("/about")}
                         className="f-navlink"
                       >
                         <i className="fa-solid fa-arrow-right"></i>&nbsp;
@@ -151,11 +164,8 @@ const Footer = () => {
 
       <div className="copyright">
         <p>
-          <i className="fa-regular fa-copyright"></i>&nbsp; Copyright NextGen.
-          2024 | All Right Reserved | IT Support By{" "}
-          <a href="https://twomglobal.com" target="_blank">
-            TWOM GLOBAL
-          </a>
+          <i className="fa-regular fa-copyright"></i>&nbsp; Copyright
+          Qualiinsight. 2024 | All Right Reserved
         </p>
       </div>
     </>

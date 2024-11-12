@@ -48,9 +48,9 @@ const Capabilities = () => {
                   <div className={e.boxclass}>
                     <div className="top-heading">{e.top_heading}</div>
                     <h2 className="inner-heading">{e.main_heading}</h2>
+                    <p className="last-inner-para">{e.desc3}</p>
                     <p className="inner-para">{e.desc}</p>
                     <p className="inner-para">{e.desc2}</p>
-                    <p className="inner-para">{e.desc3}</p>
                   </div>
                   <div className={e.imgclass}>
                     <img src={e.img} alt="img" />

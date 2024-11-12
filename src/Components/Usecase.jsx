@@ -3,15 +3,15 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "../css/about.css";
 import "../css/hero.css";
-// import about_img from "/Images/img7.jpg";
-import ServicePageData from "../API/ServicePageAPI";
+// import about_img from "/Images/img8.jpg";
+import UsecaseData from "../API/UsecaseAPI";
 import { Link } from "react-router-dom";
 
-const ServicePage = () => {
+const Usecase = () => {
   // API
   // ------------------------------------Service Page API-------------------------------------
 
-  const [servicepagedata] = useState(ServicePageData);
+  const [usecasedata] = useState(UsecaseData);
 
   // Reload
 
@@ -32,7 +32,7 @@ const ServicePage = () => {
       <section className="section-aboutpage section-servicepage">
         <div className="container">
           <h1 className="servicepage-heading">
-            Our Comprehensive <br /> Quality Services
+            UseCase
           </h1>
         </div>
       </section>
@@ -40,7 +40,7 @@ const ServicePage = () => {
       <section className="service-more">
         <div className="container">
           <div className="about-content servicepage-content">
-            {servicepagedata.map((e) => {
+            {usecasedata.map((e) => {
               return (
                 <div
                   className="servicepage-main grid grid-two-columns"
@@ -78,4 +78,4 @@ const ServicePage = () => {
   );
 };
 
-export default ServicePage;
+export default Usecase;

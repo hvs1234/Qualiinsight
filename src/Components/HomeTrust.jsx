@@ -39,17 +39,6 @@ const HomeTrust = () => {
             Transforming excellence from a goal to your daily reality with
             Qualiinsight`s QaaS.
           </h2>{" "}
-          <p className="main-para">
-            We embed top-tier quality into every product, service, and process,
-            transforming your business.
-          </p>
-          <p className="main-para">
-            With us, superior quality becomes your defining trait and
-            competitive edge.
-          </p>
-          <p className="main-para">
-            Experience the transformative power of excellence with us!
-          </p>
           <div className="pulse-circle-container grid grid-three-columns">
             <div className="pulse-data">
               <div className="pulse-circle"></div>
@@ -64,6 +53,14 @@ const HomeTrust = () => {
               <h3 id="pulse3">Custom AGI training & deployment</h3>
             </div>
           </div>
+          <p className="main-para">
+            We embed top-tier quality into every product, service, and process,
+            transforming your business. With us, superior quality becomes your defining trait and
+            competitive edge.
+          </p>
+          <p className="main-para">
+            Experience the transformative power of excellence with us!
+          </p>
         </div>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "../css/about.css";
@@ -6,35 +6,6 @@ import "../css/hero.css";
 import about_img from "/Images/img5.jpg";
 
 const AboutPage = () => {
-  // Animate Circle
-
-  const heroRef = React.useRef(null);
-
-  React.useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate");
-          } else {
-            entry.target.classList.remove("animate");
-          }
-        });
-      },
-      { threshold: 0.5 }
-    );
-
-    if (heroRef.current) {
-      observer.observe(heroRef.current);
-    }
-
-    return () => {
-      if (heroRef.current) {
-        observer.unobserve(heroRef.current);
-      }
-    };
-  }, []);
-
   return (
     <>
       {/* Navbar Section */}
@@ -49,13 +20,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      <section ref={heroRef} className="about-more">
-        <div className="about-overlay">
-          <div className="circle circle1"></div>
-          <div className="circle circle2"></div>
-          <div className="circle circle3"></div>
-          <div className="circle circle4"></div>
-        </div>
+      <section className="about-more">
         <div className="container">
           <div className="about-content">
             <p className="about-para main-para">
@@ -66,20 +31,17 @@ const AboutPage = () => {
             <div className="about-content-info grid grid-two-columns">
               <div className="about-info1 about-info">
                 <p className="about-inner-para">
-                  At QualiInsight, we envision a future where quality, insights,
-                  innovation, and research are the cornerstones of every
-                  business decision, transforming organizations into industry
-                  leaders. Our mission is to redefine the perception of quality
-                  from a mere cost center to a powerful transformation engine
-                  that provides a competitive edge in today’s dynamic market.
+                  Our mission is to redefine the perception of quality from a
+                  mere cost center to a powerful transformation engine that
+                  provides a competitive edge in today’s dynamic market. We are
+                  committed to equipping businesses with the right data and
+                  insights, empowering them to make informed, strategic choices
+                  that foster excellence and sustainable growth.
                 </p>
                 <p className="about-inner-para">
-                  We are committed to equipping businesses with the right data
-                  and insights, empowering them to make informed, strategic
-                  choices that foster excellence and sustainable growth. Our
-                  focus extends beyond immediate challenges; we aim to cultivate
-                  a culture of continuous improvement that paves the way for
-                  long-term success and innovation.
+                  Our focus extends beyond immediate challenges; we aim to
+                  cultivate a culture of continuous improvement that paves the
+                  way for long-term success and innovation.
                 </p>
               </div>
               <div className="about-info2 about-info">

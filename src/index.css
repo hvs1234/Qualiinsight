@@ -85,10 +85,11 @@ li {
 
 .common-heading {
   text-align: center;
-  font-size: 6rem;
+  font-size: 5rem;
   max-width: 60%;
-  font-weight: 500;
+  font-weight: 400;
   margin: 0 auto 4rem auto;
+  letter-spacing: 1px;
 }
 
 .common-para {
@@ -96,6 +97,7 @@ li {
   font-weight: 400;
   line-height: 1.5;
   margin: 0 auto 4rem auto;
+  letter-spacing: 0;
 }
 
 .grid {

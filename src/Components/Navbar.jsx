@@ -2,7 +2,7 @@ import React from "react";
 
 import { Link } from "react-router-dom";
 import "../css/nav.css";
-import logo_main from "/Images/logo.png";
+import logo_main from "/Images/logo2.png";
 
 const Navbar = () => {
   // Responsive Navbar
@@ -167,6 +167,15 @@ const Navbar = () => {
                       to={"/blog"}
                     >
                       Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      onClick={handleOnClick("/usecase")}
+                      className="dropdown-link"
+                      to={"/usecase"}
+                    >
+                      Usecase
                     </Link>
                   </li>
                   <li>

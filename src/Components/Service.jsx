@@ -54,7 +54,7 @@ const Service = ({ servicedata }) => {
                   key={curele.id}
                 >
                   <div className="service-icon">
-                    <img src={curele.img} alt="" />
+                    <i className={curele.icon}></i>
                   </div>
                   <div className="service-title">
                     <h2 className="inner-heading">{curele.title}</h2>

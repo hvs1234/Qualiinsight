@@ -26,7 +26,7 @@
 
 .section-servicepage .servicepage-heading {
     font-weight: 500;
-    font-size: 6rem;
+    font-size: 8rem;
 }
 
 .service-more .main-para {
@@ -46,8 +46,13 @@
     /* margin-top: 4rem; */
 }
 
+.servicepage-data .common-heading {
+    font-size: 2.5rem;
+}
+
 .section-service .common-para {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 .service-box.full-width {
@@ -61,9 +66,10 @@
     margin-right: 4rem;
 }
 
-.service-icon img {
+.service-icon i {
     width: auto;
-    filter: brightness(0.2);
+    font-size: 6rem;
+    opacity: 0.8;
 }
 
 .service-title {
@@ -85,6 +91,7 @@
     letter-spacing: 0;
     line-height: 1.5;
     font-weight: 400;
+    font-size: 2rem;
 }
 
 .services-page-data {
@@ -100,14 +107,24 @@
 .servicepage-data {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
 }
 
 .servicepage-data .common-heading {
     text-align: left;
     margin: 0;
-    font-size: 6rem;
+    font-size: 5rem;
     max-width: 100%;
+    letter-spacing: 1px;
+}
+
+.servicepage-data .common-para {
+    font-size: 2.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 0;
 }
 
 .servicepage-img {
@@ -128,8 +145,23 @@
 .servicepage-para-box {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
+    margin-bottom: 2rem;
 }
-.servicepage-para-box .common-para{
+
+.servicepage-para-box .common-para {
     margin: 0;
+    font-weight: 400;
+    font-size: 2rem;
+    letter-spacing: 0;
+}
+
+.servicepage-link {
+    color: var(--black);
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    border: 1px solid var(--black);
+    border-radius: 30px;
+    padding: 0.5rem 3rem;
 }
